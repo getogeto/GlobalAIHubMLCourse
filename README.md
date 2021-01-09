@@ -8,8 +8,3 @@
 <h6> E-mail:       gencaycakir@gmail.com
 
 
-
-
-
-
-![alt_text](https://github.com/KutayAkalin/GAIH_Student_Repo_Example/raw/main/img/certificate_ex.png?raw=true)
