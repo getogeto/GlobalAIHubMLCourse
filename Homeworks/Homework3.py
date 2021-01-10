@@ -100,9 +100,9 @@ xgc = XGBClassifier(booster = "gbtree",
                     scale_pos_weight = 1,
                     seed=27)
 
-clf = GridSearchCV(xgc, param_dict, cv=3, n_jobs=-1).fit(X_train,y_train)
-print("Tuned: {}".format(clf.best_params_)) 
-print("Mean of the cv scores is {:.6f}".format(clf.best_score_))
-print("Train Score {:.6f}".format(clf.score(X_train,y_train)))
-print("Test Score {:.6f}".format(clf.score(X_test,y_test)))
-print("Seconds used for refitting the best model on the train dataset: {:.6f}".format(clf.refit_time_))
+clf_1 = GridSearchCV(xgc, param_dict, cv=3, n_jobs=-1).fit(X_train,y_train)
+print("Tuned: {}".format(clf_1.best_params_)) 
+print("Mean of the cv scores is {:.6f}".format(clf_1.best_score_))
+print("Train Score {:.6f}".format(clf_1.score(X_train,y_train)))
+print("Test Score {:.6f}".format(clf_1.score(X_test,y_test)))
+print("Seconds used for refitting the best model on the train dataset: {:.6f}".format(clf_1.refit_time_))
